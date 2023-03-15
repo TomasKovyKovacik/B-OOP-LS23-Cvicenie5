@@ -1,16 +1,19 @@
 package sk.stuba.fei.uim.oop;
 
-import java.util.HashSet;
-import java.util.Set;
+import sk.stuba.fei.uim.oop.zvierata.Pes;
+
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> auta = new HashSet<>();
-        auta.add("Volvo");
-        auta.add("BMW");
-        auta.add("Skoda");
-        auta.add("BMW");
+        List<Pes> psi = new ArrayList<>();
+        psi.add(new Pes("Dunco"));
+        psi.add(new Pes("Luna"));
 
-        System.out.println(auta);
+        psi.forEach(pes -> {
+            pes.setMeno(pes.getMeno() + "haha");
+        });
+
+        psi.forEach(pes -> System.out.println(pes.getMeno()));
     }
 }

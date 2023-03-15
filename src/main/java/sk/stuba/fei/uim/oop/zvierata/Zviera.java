@@ -13,4 +13,12 @@ public abstract class Zviera {
         System.out.println("Pohladkal som " + this.meno);
         this.zvukZvierata();
     }
+
+    public String getMeno() {
+        return meno;
+    }
+
+    public void setMeno(String meno) {
+        this.meno = meno;
+    }
 }
