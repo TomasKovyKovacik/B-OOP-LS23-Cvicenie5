@@ -3,6 +3,7 @@ package sk.stuba.fei.uim.oop;
 import sk.stuba.fei.uim.oop.zvierata.Macka;
 import sk.stuba.fei.uim.oop.zvierata.Pes;
 import sk.stuba.fei.uim.oop.zvierata.Zviera;
+import sk.stuba.fei.uim.oop.zvierata.ZvieraComparator;
 
 import java.util.*;
 
@@ -15,7 +16,7 @@ public class Main {
         zveri.add(new Macka("Garfield"));
 
         System.out.println(zveri);
-        zveri.sort(null);
+        zveri.sort(new ZvieraComparator());
         System.out.println(zveri);
 
 
