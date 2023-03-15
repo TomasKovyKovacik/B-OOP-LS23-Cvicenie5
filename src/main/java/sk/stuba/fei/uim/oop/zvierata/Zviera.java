@@ -21,4 +21,9 @@ public abstract class Zviera {
     public void setMeno(String meno) {
         this.meno = meno;
     }
+
+    @Override
+    public String toString() {
+        return meno;
+    }
 }

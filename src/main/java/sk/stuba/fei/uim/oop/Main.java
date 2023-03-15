@@ -1,19 +1,25 @@
 package sk.stuba.fei.uim.oop;
 
+import sk.stuba.fei.uim.oop.zvierata.Macka;
 import sk.stuba.fei.uim.oop.zvierata.Pes;
+import sk.stuba.fei.uim.oop.zvierata.Zviera;
 
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Pes> psi = new ArrayList<>();
-        psi.add(new Pes("Dunco"));
-        psi.add(new Pes("Luna"));
+        List<Zviera> zveri = new ArrayList<>();
+        zveri.add(new Pes("Dunco"));
+        zveri.add(new Pes("Luna"));
+        zveri.add(new Macka("Murko"));
+        zveri.add(new Macka("Garfield"));
 
-        psi.forEach(pes -> {
-            pes.setMeno(pes.getMeno() + "haha");
+        System.out.println(zveri);
+        zveri.sort((o1, o2) -> {
+            return o1.getMeno().compareTo(o2.getMeno());
         });
+        System.out.println(zveri);
 
-        psi.forEach(pes -> System.out.println(pes.getMeno()));
+
     }
 }
