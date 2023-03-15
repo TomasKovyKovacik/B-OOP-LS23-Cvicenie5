@@ -22,6 +22,4 @@ public class Pes extends Zviera {
         System.out.println("hau hau");
     }
 
-
-
 }

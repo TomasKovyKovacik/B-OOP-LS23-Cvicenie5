@@ -15,9 +15,7 @@ public class Main {
         zveri.add(new Macka("Garfield"));
 
         System.out.println(zveri);
-        zveri.sort((o1, o2) -> {
-            return o1.getMeno().compareTo(o2.getMeno());
-        });
+        zveri.sort(null);
         System.out.println(zveri);
 
 
